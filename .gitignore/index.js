@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-bot.login('NDMyNDc5NDE0NTI2MTQ4NjA4.DaulPA.Q5ndurzUTNtSOZrT0epJHz16kHk')
+bot.login('NDMyNDc5NDE0NTI2MTQ4NjA4.Daulpg.DTk81Zy3c5dCbOsUKPkSIZBMaSA')
 
 bot.on('ready', function (){
 	bot.user.setGame('!help').catch(console.error)
