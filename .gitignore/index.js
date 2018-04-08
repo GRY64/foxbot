@@ -37,3 +37,9 @@ bot.on("guildMemberAdd", member => {
 	var role = member.guild.roles.find("name", "Soldats");
 	member.addRole(role)
 })
+
+bot.on('message', message => {
+  if (message.content === '!tea') {
+    message.reply("c très vilain de m'exciter bb")
+  }
+})
