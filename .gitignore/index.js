@@ -22,7 +22,7 @@ bot.on("guildMemberAdd", member => {
 bot.on("message", message => {
   if (message.content === '!jaune') {
     var roleColor = message.guild.roles.find("name", "jaune");
-	message.addRole(roleColor)
+	member.addRole(roleColor)
   }
 })
 
