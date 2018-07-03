@@ -19,6 +19,13 @@ bot.on("guildMemberAdd", member => {
 	member.addRole(role)
 })
 
+bot.on("message", member => {
+  if (message.content === '!jaune') {
+    var role = member.guild.roles.find("name", "jaune");
+	member.addRole(role)
+  }
+})
+
 bot.on('message', message => {
   if (message.content === '!help') {
     var help = new Discord.RichEmbed()
