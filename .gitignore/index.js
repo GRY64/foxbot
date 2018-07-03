@@ -19,14 +19,6 @@ bot.on("guildMemberAdd", member => {
 	member.addRole(role)
 })
 
-bot.on("message", message => {
-  if (message.content === '!jaune') {
-	  message.reply('tu es jaune');
-    var roleColor = member.guild.roles.find("name", "jaune");
-	member.addRole(roleColor)
-  }
-})
-
 bot.on('message', message => {
   if (message.content === '!help') {
     var help = new Discord.RichEmbed()
