@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-bot.login('process.env.TOKEN')
+bot.login('NDMyNDc5NDE0NTI2MTQ4NjA4.DiATBw.nKFDK1jfjd2TZeWSJ9tt-pHnAzw')
 
 bot.on('ready', function (){
 	bot.user.setGame('!help').catch(console.error)
