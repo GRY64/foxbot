@@ -68,8 +68,30 @@ bot.on('message', message => {
   if (message.content === '!jaune') {
 		var role = message.guild.roles.find("name", "jaune");
 		message.member.addRole(role)
+
 		var role1 = message.guild.roles.find("name", "orange");
 		message.member.removeRole(role1)
+
+		var role2 = message.guild.roles.find("name", "rouge");
+		message.member.removeRole(role2)
+
+		var role3 = message.guild.roles.find("name", "bleu");
+		message.member.removeRole(role3)
+
+		var role4 = message.guild.roles.find("name", "cyan");
+		message.member.removeRole(role4)
+
+		var role5 = message.guild.roles.find("name", "rose");
+		message.member.removeRole(role5)
+
+		var role6 = message.guild.roles.find("name", "marron");
+		message.member.removeRole(role6)
+
+		var role7 = message.guild.roles.find("name", "violet");
+		message.member.removeRole(role7)
+
+		var role8 = message.guild.roles.find("name", "vert");
+		message.member.removeRole(role8)
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
 		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur jaune !")
