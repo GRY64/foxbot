@@ -28,7 +28,7 @@ bot.on("guildMemberAdd", member => {
 })
 
 bot.on('message', message => {
-  if (message.content === '!default') {
+  if (message.content === '!defaut') {
 
 		var role1 = message.guild.roles.find("name", "jaune");
 		message.member.removeRole(role1)
