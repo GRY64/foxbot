@@ -52,3 +52,13 @@ bot.on('message', message => {
 		message.channel.send(servers);
   }
 })
+
+/*colors 
+rouge : #e40303
+orange : #f78f00
+jaune : #dfbe0b
+bleu : #0531b3
+cyan : #0787d3
+violet : #5c07c4
+vert : #04a20d
+*/
