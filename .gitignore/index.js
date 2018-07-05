@@ -168,7 +168,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur rouge!")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur rouge !")
 		.setColor("#cf2828")
 		message.channel.send(info);
   }
