@@ -168,7 +168,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur rouge!")
 		.setColor("#cf2828")
 		message.channel.send(info);
   }
@@ -205,7 +205,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur bleue !")
 		.setColor("#3238cf")
 		message.channel.send(info);
   }
@@ -242,7 +242,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur cyan !")
 		.setColor("#0787d3")
 		message.channel.send(info);
   }
@@ -279,7 +279,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur violette !")
 		.setColor("#a55dff")
 		message.channel.send(info);
   }
@@ -316,7 +316,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur rose !")
 		.setColor("#ff4be4")
 		message.channel.send(info);
   }
@@ -353,7 +353,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur verte !")
 		.setColor("#04a20d")
 		message.channel.send(info);
   }
@@ -390,7 +390,7 @@ bot.on('message', message => {
 
 		var info = new Discord.RichEmbed()
 		.setTitle("🎨 Changement de couleur")
-		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur orange !")
+		.setDescription("Salut " + message.member.displayName + ", ton pseudonyme apparaîtra dorénavant de couleur marron !")
 		.setColor("#af5305")
 		message.channel.send(info);
   }
