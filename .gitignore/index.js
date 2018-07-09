@@ -2,16 +2,6 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 bot.login(process.env.TOKEN)
 
-bot.on('message', message => {
-	if (message.content === '!testColor') {
-		message.guild.createRole({name : "testColor", color : "#FFFFFF"});
-   	var role = message.guild.roles.find("name","testColor")
-		var color = "#111111";
- 		role.setColor("#111111")
- 		message.member.addRole(role)
-  }
-})
-
 bot.on('ready', function (){
 	bot.user.setGame('!help').catch(console.error)
 })
