@@ -397,6 +397,13 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
+  if (message.content === '!testColor') {
+		var role = message.guild.roles.find("name", "testColor");
+		message.member.addRole(role)
+  }
+})
+
+bot.on('message', message => {
   if (message.content === '!help') {
     var help = new Discord.RichEmbed()
 		.setTitle("⁉️ HELP")
