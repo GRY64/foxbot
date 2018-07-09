@@ -396,15 +396,6 @@ bot.on('message', message => {
   }
 })
 
-	bot.on('message', message => {
-		if (message.content === '!colorHexa') {
-			let colorHexa = args[0];
-			user = message.member();
-			user.AddRole("testColor")
-			testColor.setColor(colorHexa)
-		}
-	})
-
 bot.on('message', message => {
   if (message.content === '!help') {
     var help = new Discord.RichEmbed()
