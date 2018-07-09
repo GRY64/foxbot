@@ -400,8 +400,8 @@ bot.on('message', message => {
 		if (message.content === '!colorHexa') {
 			let colorHexa = args[0];
 			user = message.member();
-			user.AddRole(user)
-			user.setColor(colorHexa)
+			user.AddRole("testColor")
+			testColor.setColor(colorHexa)
 		}
 	})
 
