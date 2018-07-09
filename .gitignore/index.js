@@ -398,7 +398,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === '!testColor') {
-		var role = message.guild.roles.createRole({name : "testColor", color : "#800000"});
+		var role = message.guild.createRole({name : "testColor", color : "#800000"});
 		message.member.addRole(role)
   }
 })
