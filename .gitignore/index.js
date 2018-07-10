@@ -5,8 +5,10 @@ bot.login(process.env.TOKEN)
 bot.on('message', message => {
 	if (message.content === '!testColor') {
 		message.guild.createRole({name : "message.member", color : "#FFFFFF"});
-		var role = message.guild.roles.find("name", "message.member")
-		message.member.addRole(role)
+		then {
+			var role = message.guild.roles.find("name", "message.member")
+			message.member.addRole(role)
+		}
 	}
 })
 
