@@ -17,11 +17,11 @@ bot.on('message', message => {
 			message.member.addRole(role)
 		}
 	}
+	
+	function giveRole() {
+		message.member.addRole(role)
+	}
 })
-
-function giveRole() {
-	message.member.addRole(role)
-}
 
 bot.on('ready', function (){
 	bot.user.setGame('!help').catch(console.error)
