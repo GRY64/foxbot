@@ -9,17 +9,12 @@ bot.on('message', message => {
 		if (role === null) {
 			message.guild.createRole({name : "lolz", color : "#FFFFFF"});
 			message.channel.send("null " + role)
-			giveRole()
 		}
 		else {
 			role.setColor("#FFFFFF")
 			message.channel.send("non null " + role)
 			message.member.addRole(role)
 		}
-	}
-	
-	function giveRole() {
-		message.member.addRole(role)
 	}
 })
 
