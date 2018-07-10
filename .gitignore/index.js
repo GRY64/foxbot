@@ -4,8 +4,15 @@ bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
 	if (message.content === '!testColor') {
-		var role = message.guild.roles.find("name", "lol")
-		message.channel.send("test" + role)
+		var role = message.guild.roles.find("name", "message.member")
+		if (role === "null") {
+		message.guild.createRole({name : message.member, color : "#FFFFFF"});
+		message.channel.send("null " + role)
+		}
+		else {
+			role.setColor("#FFFFFF")
+			message.channel.send("non null " + role)
+		}
 	}
 })
 
