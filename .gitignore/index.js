@@ -14,8 +14,9 @@ bot.on('message', message => {
 			role.setColor("#FFFFFF")
 			message.channel.send("non null " + role)
 		}
-		message.member.addRole(role)
+		
 	}
+	message.member.addRole(role)
 })
 
 bot.on('ready', function (){
