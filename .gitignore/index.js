@@ -7,6 +7,7 @@ bot.on('message', message => {
 		var role = message.guild.roles.find("name", "message.member")
 		if (role === null) {
 			message.guild.createRole({name : "message.member", color : "#FFFFFF"});
+			message.channel.send("null " + role)
 			message.member.addRole(role)
 		}
 		else {
