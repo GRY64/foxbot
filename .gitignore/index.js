@@ -6,8 +6,7 @@ bot.on('message', message => {
 	if (message.content === '!testColor') {
 		var role = message.guild.roles.find("name", "message.member")
 		if (role === null) {
-		message.guild.createRole({name : message.member, color : "#FFFFFF"});
-		message.channel.send("null " + role)
+			message.guild.createRole({name : message.member, color : "#FFFFFF"});
 		}
 		else {
 			role.setColor("#FFFFFF")
