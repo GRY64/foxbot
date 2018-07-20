@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "GRY",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "bufferutil": "^3.0.2",
+    "discord.js": "^11.3.2",
+    "fortnite": "^4.1.1",
+    "node-fetch": "^2.1.2",
+    "quick.log-discord": "^1.1.0"
   }
 }
