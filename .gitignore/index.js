@@ -70,9 +70,10 @@ bot.on('message', message => {
         message.delete();
         var help = new Discord.RichEmbed()
         .setTitle("🎨 Changement de couleur")
-        .setDescription("Vous pouvez changer la couleur d'affichage de votre pseudonyme. Vous avez le choix entre 10 couleurs différentes (9 + celle par défaut), que vous pouvez visionner ci-dessous.")
-        .addField("🔠 Syntaxe", "`!<couleur>`", true)
-        .addField("🖌️ Liste des couleurs", "10 couleurs disponibles :", true)
+        .setDescription("Vous pouvez changer la couleur d'affichage de votre pseudonyme. Vous avez le choix entre 10 couleurs prédéfinies différentes (9 + celle par défaut), que vous pouvez visionner ci-dessous. Autrement, vous pouvez également choisir un couleur personnalisée à l'aide de son code couleur hexadécimal, que vous pouvez trouver ici notamment : `color-hex.com`.")
+        .addField("Couleurs prédéfinies", "`!<couleur>`", true)
+	.addField("Couleurs customisées", "`!customColor <couleurHexa>`", true)
+        .addField("Liste des couleurs prédéfinies", "10 couleurs disponibles :", true)
         .setColor("0xE37A01")
         .setImage(url="http://image.noelshack.com/fichiers/2018/27/4/1530818757-color.png")
         message.channel.send(help);
