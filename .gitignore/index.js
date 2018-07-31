@@ -39,6 +39,7 @@ bot.on('message', message => {
         .addField("ℹ️ !info", "Informations concernant le serveur.", true)
         .addField("🌎 !servers", "Serveurs CSGO recommandés.", true)
         .addField("🎨 !color", "Changement de couleur.", true)
+	.addField("🔫 !ftn", "Statistiques Fortnite.", true)
         .setColor("0xE37A01")
         .setThumbnail(url="https://housing.umn.edu/sites/housing.umn.edu/files/help.png")
         message.channel.send(help);
