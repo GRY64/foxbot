@@ -12,7 +12,7 @@ bot.on("guildMemberAdd", member => {
 	.setTitle("✅ Nouvel arrivant !")
 	.setDescription("Bienvenue à " + member.displayName + " sur le Discord FØX Clan ! Utilise la commande !help pour accéder à la liste des commandes disponibles.")
 	.setColor("#50D84C")
-    member.guild.channels.find("name", "general").send(guildMember)
+    member.guild.channels.find("name", "bienvenue").send(guildMember)
     var role = member.guild.roles.find("name", "Soldats");
 	member.addRole(role)
 })
@@ -22,7 +22,7 @@ bot.on("guildMemberRemove", member => {
 	.setTitle("❌ Quelqu'un a déserté !")
 	.setDescription(member.displayName + " a quitté le serveur... J'ai toujours dit que c'était un noob !")
 	.setColor("#FD4040")
-	member.guild.channels.find("name", "general").send(guildMember)
+	member.guild.channels.find("name", "bienvenue").send(guildMember)
 })
 
 bot.on('message', message => {
