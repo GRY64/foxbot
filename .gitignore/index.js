@@ -17,13 +17,13 @@ bot.on("guildMemberAdd", member => {
 	member.addRole(role)
 })
 
-bot.on("guildMemberRemove", member => {
-	var guildMember = new Discord.RichEmbed()
-	.setTitle("❌ Quelqu'un a déserté !")
-	.setDescription(member.displayName + " a quitté le serveur... J'ai toujours dit que c'était un noob !")
-	.setColor("#FD4040")
-	member.guild.channels.find("name", "bienvenue").send(guildMember)
-})
+//bot.on("guildMemberRemove", member => {
+//	var guildMember = new Discord.RichEmbed()
+//	.setTitle("❌ Quelqu'un a déserté !")
+//	.setDescription(member.displayName + " a quitté le serveur... J'ai toujours dit que c'était un noob !")
+//	.setColor("#FD4040")
+//	member.guild.channels.find("name", "bienvenue").send(guildMember)
+//})
 
 bot.on('message', message => {
 
